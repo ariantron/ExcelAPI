@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use JetBrains\PhpStorm\NoReturn;
 use ReportService;
 
 class ReportController extends Controller
 {
-    public function index()
+    #[NoReturn] public function index()
     {
-        print_r(ReportService::report());
+        dd(ReportService::report());
     }
 }
