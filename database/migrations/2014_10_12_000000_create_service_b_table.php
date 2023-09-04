@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('service_b', function (Blueprint $table) {
-            $table->uuid();
-            $table->unsignedInteger('mobile_number')->nullable(false);
+            $table->id();
+            $table->string('mobile_number')->nullable(false);
             $table->string('product_name')->nullable(false);
             $table->timestamps();
         });
