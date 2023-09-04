@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use ReportService;
 
-class APIController extends Controller
+class ReportApiController extends Controller
 {
-    public function report()
+    public function index()
     {
         return response()->json(ReportService::report());
     }

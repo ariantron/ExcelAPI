@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\APIController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return 'ExcelAPI';
 });
 
-Route::get('/report', [APIController::class, 'report'])->name('report');
+Route::get('/report', [ReportController::class, 'index'])->name('report.index');
